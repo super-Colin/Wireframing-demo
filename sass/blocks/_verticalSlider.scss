@@ -1,0 +1,11 @@
+
+.verticalSlider_slides-container{
+  >*:nth-child(1),
+  >*:nth-last-child(1) {
+    width: 60%;
+  }
+  >*:nth-child(2),
+  >*:nth-last-child(2) {
+    width: 80%;
+  }
+}

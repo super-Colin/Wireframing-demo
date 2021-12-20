@@ -1,0 +1,185 @@
+/* ==-- Brand Settings --== */
+/* ==-- Break Points --== */
+/* ==-- Spacing --== */
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  .align-baseline_at-tabletLandscape {
+    align-items: baseline;
+  }
+}
+@media (max-width: 768px) {
+  .flex-column_until-tabletLandscape {
+    flex-direction: column;
+  }
+
+  .align-start_until-tabletLandscape {
+    align-items: start;
+  }
+}
+.gutters_page {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.width_full {
+  width: 100%;
+}
+
+.width_50 {
+  width: 50%;
+}
+
+.block_margin-full {
+  margin: 1.2rem 5vw;
+}
+
+.block_padding-x {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.block_margin-x {
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+.block_padding-y {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.block_margin-y {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hide_until-tabletLandscape {
+    display: none;
+  }
+}
+
+html,
+body {
+  --wf-margin: 0.2rem;
+  font-size: calc(10px + 1.87vw);
+}
+@media (min-width: 576px) {
+  html,
+body {
+    font-size: calc(12px + 0.75vw);
+  }
+}
+@media (min-width: 768px) {
+  html,
+body {
+    font-size: calc(12px + 0.55vw);
+  }
+}
+@media (min-width: 992px) {
+  html,
+body {
+    font-size: calc(14px + 0.22vw);
+  }
+}
+@media (min-width: 1200px) {
+  html,
+body {
+    font-size: calc(15px + 0.1vw);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+* > * {
+  margin: 0.2rem;
+  margin: var(--wf-margin);
+}
+
+body {
+  background-color: #fff;
+}
+body * {
+  background-color: rgba(55, 55, 55, 0.2);
+}
+body > *:nth-child(even) {
+  background-color: rgba(55, 155, 55, 0.3);
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans";
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header_logo {
+  width: 2.5rem;
+}
+
+.verticalSlider_slides-container > *:nth-child(1),
+.verticalSlider_slides-container > *:nth-last-child(1) {
+  width: 60%;
+}
+.verticalSlider_slides-container > *:nth-child(2),
+.verticalSlider_slides-container > *:nth-last-child(2) {
+  width: 80%;
+}
+
+/*# sourceMappingURL=style.css.map */

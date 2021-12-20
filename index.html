@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Wireframe By Colin</title>
+</head>
+
+<body>
+
+<div id="wf-spacing_container" class="flex flex-wrap align-center justify-center">
+  <h2 class="width_full text-center">Add some margin?</h2>
+  <input type="range" min="0" max="1.5" step="0.1" value="0.2" id="wf-marginController">
+  <div class="width_full" style="margin:0.5rem 0;"></div>
+  <span id="wf-marginController-value">0.2rem</span>
+  <button id="wf-marginController-disappear" >Hide Me</button>
+  <script>
+    document.getElementById("wf-marginController").addEventListener("input", function(e) {
+      document.body.style.setProperty("--wf-margin", e.target.value + "rem");
+      document.getElementById("wf-marginController-value").innerHTML = e.target.value +"rem";
+    });
+    document.getElementById("wf-marginController-disappear").addEventListener("click", function(e) {
+      document.getElementById("wf-spacing_container").style.display = "none";
+    });
+  </script>
+</div>
+
+  <header class="wf-box flex align-center">
+    <div class="flex align-center justify-between width_full gutters_page block_padding-y">
+
+      <div class="flex align-center">
+        <img class="header_logo" src="./assets/placeholder.jpg" alt="logo">
+        <a href="#">Ipsumay Services </a>
+      </div>
+
+      <div class="flex align-center">
+        <a class="hide_until-tabletLandscape" href="#">User Login</a>
+        <div class="flex flex-column align-center">
+          <img class="header_logo" src="./assets/placeholder.jpg" alt="logo">
+          <a href="#">Menu</a>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <div class="flex justify-between flex-column_until-tabletLandscape block_margin-y">
+
+    <div class="block_margin-full">
+      <h1>Inventore minima quas</h1>
+    </div>
+
+    <div class="block_margin-full">
+      <img src="./assets/placeholder.jpg" alt="placeholder">
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore minima quas ab ratione dolorem quisquam nemo doloribus rem perspiciatis amet exercitationem sequi ad aliquam eos, tempora dolor, quibusdam laborum facilis?</p>
+        <span>Slider Here</span>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <div class="block_margin-y flex flex-column_until-tabletLandscape">
+    <div class="block_margin-full">
+      <h4>Inventore minima quas</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit, tempora dolor, quibusdam laborum facilis?</p>
+    </div>
+
+    <div class="block_margin-full flex flex-column_until-tabletLandscape align-center">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore minima quas ab ratione dolorem quisquam nemo doloribus rem perspiciatis amet exercitationem sequi ad aliquam eos, tempora dolor, quibusdam laborum facilis?</p>
+      <img style="width:100px;" src="./assets/placeholder.jpg" alt="placeholder">
+    </div>
+  </div>
+
+
+  <div class="flex justify-between flex-column_until-tabletLandscape block_margin-y">
+
+    <div class="block_margin-full">
+      <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore minima quas ab ratione dolorem quisquam nemo doloribus rem perspiciatis amet exercitationem sequi ad aliquam eos, tempora dolor, quibusdam laborum facilis?</p>
+        <a href="#">Lorem adipisicing elits</a>
+    </div>
+
+    <div class="block_margin-full">
+      <img src="./assets/placeholder.jpg" alt="placeholder">
+      <div>
+        <span>Slider Here</span>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <div class="block_margin-y flex flex-column">
+    <div class="block_margin-full text-center">
+      <h4>Mission Statement</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore minima quas ab ratione dolorem quisquam nemo doloribus rem perspiciatis amet exercitationem sequi ad aliquam eos, tempora dolor, quibusdam laborum facilis?</p>
+      <div>
+        <p>rem perspiciatis</p>
+        <p>rem perspiciatis</p>
+        <p>Ipsumay Services </p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="flex flex-column_until-tabletLandscape justify-between block_margin-y">
+
+    <div id="verticalSlider" class="flex block_margin-full">
+      <div>
+        scroll
+      </div>
+
+      <div class="verticalSlider_slides-container flex flex-column align-start_until-tabletLandscape">
+        <div class="flex align-center hide_until-tabletLandscape">
+          <img style="width:60px;" src="./assets/placeholder.jpg" alt="placeholder">
+          <div>
+            <p>Lorem Ipsum!</p>
+          </div>
+        </div>
+
+        <div class="flex align-center">
+          <img style="width:60px;" src="./assets/placeholder.jpg" alt="placeholder">
+          <div>
+            <p>Lorem Ipsum!</p>
+          </div>
+        </div>
+
+        <div class="flex align-center">
+          <img style="width:60px;" src="./assets/placeholder.jpg" alt="placeholder">
+          <div>
+            <p>Lorem Ipsum!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ex odit voluptates sit commodi eius unde reiciendis, modi dicta nesciunt incidunt! Provident impedit fugit accusamus asperiores.</p>
+          </div>
+        </div>
+        
+        <div class="flex align-center">
+          <img style="width:60px;" src="./assets/placeholder.jpg" alt="placeholder">
+          <div>
+            <p>Lorem Ipsum!</p>
+          </div>
+        </div>
+
+        <div class="flex align-center hide_until-tabletLandscape">
+          <img style="width:60px;" src="./assets/placeholder.jpg" alt="placeholder">
+          <div>
+            <p>Lorem Ipsum!</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="block_margin-full">
+      <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+      <a href="#">Lorem adipisicing elits</a>
+    </div>
+  </div>
+
+
+  <footer class="flex flex-column">
+
+    <div class="flex flex-column align-center align-baseline_at-tabletLandscape">
+      <p>Ipsumay Services Inc</p>
+      <div class="flex align-center align-baseline_at-tabletLandscape flex-column_until-tabletLandscape">
+        <h1>Lorem ipsum dolor sit amet consectetur</h1>
+        <a href="#">in</a>
+      </div>
+      
+    </div>
+
+    <div class="flex flex-column_until-tabletLandscape">
+
+      <div class="flex flex-column">
+        <img style="width: 40px;" src="./assets/placeholder.jpg" alt="placeholder"></img>
+        <span>&copy;2021</span>
+      </div>
+
+      <div class="flex flex-column_until-tabletLandscape flex-grow justify-around">
+        <ul>
+          <li><a href="#">Lorem</a></li>
+          <li><a href="#">Lorem</a></li>
+          <li><a href="#">Lorem</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Lorem</a></li>
+          <li><a href="#">Lorem</a></li>
+          <li><a href="#">Lorem</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Lorem</a></li>
+          <li><a href="#">Lorem</a></li>
+          <li><a href="#">Lorem</a></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-column justify-center">
+        <span>Lorem ipsum dolar</span>
+        <a href="#">Lorem@Ipsum.com</a>
+      </div>
+
+
+    </div>
+
+    
+
+  </footer>
+
+
+
+</body>
+</html>

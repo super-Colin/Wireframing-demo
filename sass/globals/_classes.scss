@@ -1,0 +1,66 @@
+
+// Flexbox
+.flex {display: flex;}
+.flex-wrap {flex-wrap: wrap;}
+.flex-grow {flex-grow: 1;}
+.flex-column {flex-direction: column;}
+.align-center {align-items: center;}
+.align-baseline {align-items: baseline;}
+.justify-center {justify-content: center;}
+.justify-between {justify-content: space-between;}
+.justify-around {justify-content: space-around;}
+
+// Mobile first in mind
+@media (min-width: $BP_for-tabletLandscape) {
+  .align-baseline_at-tabletLandscape {align-items: baseline;}
+}
+@media (max-width: $BP_for-tabletLandscape) {
+  .flex-column_until-tabletLandscape {flex-direction: column;}
+  .align-start_until-tabletLandscape {align-items: start;}
+}
+
+
+// Spacing
+.gutters_page{
+  margin-left: $G_spacing_gutters;
+  margin-right: $G_spacing_gutters;
+}
+
+.width_full {width: 100%;}
+.width_50 {width: 50%;}
+
+
+// Block padding
+.block_margin-full{
+  margin: $G_spacing_medium $G_spacing_gutters;
+}
+.block_padding-x {
+  padding-left: $G_spacing_medium;
+  padding-right: $G_spacing_medium;
+}
+.block_margin-x {
+  margin-left: $G_spacing_medium;
+  margin-right: $G_spacing_medium;
+}
+.block_padding-y {
+  padding-top: $G_spacing_medium;
+  padding-bottom: $G_spacing_medium;
+}
+.block_margin-y {
+  margin-top: $G_spacing_medium;
+  margin-bottom: $G_spacing_medium;
+}
+
+
+// Text
+.text-center{
+  text-align: center;
+}
+
+
+// Utilities that need to override
+.hide_until-tabletLandscape {
+  @media (max-width: $BP_for-tabletLandscape) {
+    display: none;
+  }
+}

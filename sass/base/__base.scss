@@ -1,0 +1,56 @@
+// Base (A place to add your basic styles to apply globally)
+
+// @import './normalize'; // In a real project we would also have these
+// @import './accessibility'; // In a real project we would also have these
+
+html,
+body {
+  --wf-margin: 0.2rem;
+  // Set a responsive REM unit that, but give less and less weight to screen sizes as they increase
+  // Reset base rem unit to 16px at each breakpoint
+  font-size: calc(10px + 1.87vw); // 16px at 320px VW 
+
+  @media (min-width: $BP_for-tablet) {
+    font-size: calc(12px + 0.75vw); // 16.3px at 576px=100VW
+  }
+  @media (min-width: $BP_for-tabletLandscape) {
+    font-size: calc(12px + 0.55vw); // 16.2px at 768px=100VW
+  }
+  @media (min-width: $BP_for-desktop) {
+    font-size: calc(14px + 0.22vw); // 16.2px at 992px=100VW
+  }
+  @media (min-width: $BP_for-desktop4k) {
+    font-size: calc(15px + 0.1vw); // 16.2px at 1200px=100VW
+  }
+}
+// Normalize spacing for elements
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  >* {
+    // ONLY TO MAKE IT EASIER TO SEE CONTAINING ELEMENTS
+    margin: 0.2rem; //fallback
+    margin: var(--wf-margin);
+  }
+}
+
+body{
+  background-color: #fff;
+
+  * {background-color: rgba(55, 55, 55, 0.2);}// Give *everything* a slight background color so overlaps get darker
+  
+  >*:nth-child(even) {background-color: rgba(55, 155, 55, 0.3);}// Give a colored bg to every-other *direct descendant* of body
+}
+
+
+// Set base fonts
+body{ font-family: $brand_font_heading; }
+h1,h2,h3,h4,h5,h6{ font-family: $brand_font_body; }
+
+// some minor global styles
+img{ max-width: 100%; max-height: 100%; }
+a{ text-decoration: none; }
+ul{ list-style: none; }
+
+
